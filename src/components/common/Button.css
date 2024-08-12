@@ -1,0 +1,38 @@
+.mainBtn {
+    border: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(255, 243, 68);
+    font-weight: bold;
+    border-radius: 10px;
+}
+.mainBtn:hover {
+    background-color: rgb(233, 222, 68);
+}
+.deleteBtn {
+    border: none;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(255, 68, 68);
+    font-weight: bold;
+    border-radius: 10px;
+}
+.deleteBtn:hover {
+    background-color: rgb(224, 71, 71);
+}
+.dsa {
+    color: #caf0f8;
+}
+.closeModalBtn {
+    border: none;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 20px;
+}

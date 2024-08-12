@@ -1,0 +1,10 @@
+tr:hover {
+    background-color: #b7d8df;
+}
+
+tr {
+    background-color: #caf0f8;
+}
+td {
+    padding: 15px;
+}
