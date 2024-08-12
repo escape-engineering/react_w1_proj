@@ -84,8 +84,10 @@ const Container = () => {
     };
 
     useEffect(() => {
-        const countries = JSON.parse(localStorage.getItem("countries"));
-        setTotal(countries);
+        if (localStorage.getItem("countries")) {
+            const countries = JSON.parse(localStorage.getItem("countries"));
+            setTotal(countries);
+        }
     }, []);
     const setLocalStorage = () => {
         localStorage.setItem("countries", JSON.stringify(total));
