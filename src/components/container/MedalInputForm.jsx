@@ -1,7 +1,7 @@
 import React from "react";
-import CountryInput from "./CountryInput";
-import MedalInput from "./MedalInput";
-import Button from "../common/Button";
+import CountryInput from "./CountryInput.jsx";
+import MedalInput from "./MedalInput.jsx";
+import Button from "../common/Button.jsx";
 
 const MedalInputForm = ({ country, setCountry, medals, addHandler, updateHandler }) => {
     return (

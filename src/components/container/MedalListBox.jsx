@@ -1,5 +1,5 @@
 import React from "react";
-import MedalList from "./MedalList";
+import MedalList from "./MedalList.jsx";
 import "./MedalListBox.css";
 
 const MedalListBox = ({ onClick, total }) => {

@@ -1,7 +1,7 @@
 import React from "react";
-import Input from "../common/Input";
-import { inputTitleStyle } from "./CountryInput";
-import { inputBoxDiv } from "./CountryInput";
+import Input from "../common/Input.jsx";
+import { inputTitleStyle } from "./CountryInput.jsx";
+import { inputBoxDiv } from "./CountryInput.jsx";
 
 const MedalInput = ({ medals }) => {
     return (

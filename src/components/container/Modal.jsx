@@ -1,5 +1,4 @@
-import { useEffect } from "react";
-import Button from "../common/Button";
+import Button from "../common/Button.jsx";
 import "./Modal.css";
 
 const Modal = ({ elRef, alertText }) => {

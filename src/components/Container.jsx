@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import Title from "./container/Title";
-import MedalListBox from "./container/MedalListBox";
+import Title from "./container/Title.jsx";
+import MedalListBox from "./container/MedalListBox.jsx";
 import "./Container.css";
-import MedalInputForm from "./container/MedalInputForm";
-import Modal from "./container/Modal";
-import useDidMountedEffect from "../hooks/useDidMountedEffect";
+import MedalInputForm from "./container/MedalInputForm.jsx";
+import Modal from "./container/Modal.jsx";
+import useDidMountedEffect from "../hooks/useDidMountedEffect.jsx";
 
 const Container = () => {
     const modalRef = useRef();
