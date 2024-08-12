@@ -42,7 +42,7 @@
 - 국가명을 입력하지 않거나, 기능에 적합하지 않게 사용할 때에는 모달창을 이용하여 사용자에게 오류메시지를 보여준다.
 
 ## 트러블슈팅
--   문제1
+- 문제1
 ```
 로컬스토리지에 데이터를 저장하고 useEffect안에서 해당 데이터를 가져오는 작업 중 생긴 문제
 - 데이터 삭제 시 마지막 한 데이터가 삭제되지 않음
@@ -52,4 +52,26 @@
 ==> useEffect의 페이지가 로드된 후 실행되는 기능을 제거한 useDidMountedEffect 커스텀 훅을 만들어 사용함.
 
 ===> bool값을 useRef를 이용해 만들고, useDidMountedEffect안에서 해당 ref값이 true일 때 함수를 실행, false일 때 ref를 true로 바꾸는 작업을 통해 페이지가 로드될때 / 의존성배열이 바뀔 때를 나누어 해결 
+```
+
+- 문제2
+```javascript
+//수정 전
+useEffect(() => {
+    const countries = JSON.parse(localStorage.getItem("countries"));
+    setTotal(countries);
+}, []);
+```
+```
+배포시 localStorage에 빈 배열조차 없어 null관련 오류 발생
+=> countries라는 키값을 가진 데이터가 있을 경우에만 관련 작업 하도록 변경함
+```
+```javascript
+//수정 후
+useEffect(() => {
+    if (localStorage.getItem("countries")) {
+        const countries = JSON.parse(localStorage.getItem("countries"));
+        setTotal(countries);
+    }
+}, []);
 ```
