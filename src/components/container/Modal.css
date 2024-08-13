@@ -20,7 +20,7 @@ dialog[open] {
         height: 0px;
     }
     100% {
-        width: 190px;
+        width: 300px;
         height: 80px;
     }
 }
@@ -31,4 +31,5 @@ dialog[open] {
 }
 p {
     margin: 5px 0px;
+    text-align: center;
 }

@@ -1,8 +1,8 @@
 import React from "react";
-import Container from "./components/Container.jsx";
+import CountryContainer from "./components/CountryContainer.jsx";
 
 const App = () => {
-    return <Container />;
+    return <CountryContainer />;
 };
 
 export default App;

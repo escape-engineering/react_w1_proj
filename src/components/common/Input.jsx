@@ -1,12 +1,7 @@
 import "./Input.css";
 
-const Input = ({ type = "number", value, setValue, placeholder, id }) => {
-    const inputHandler = (e) => {
-        const { type, value } = e.target;
-        type === "text" ? setValue(value) : setValue(Number(value));
-    };
-
-    return <input placeholder={placeholder} id={id} type={type} onChange={inputHandler} value={value} />;
+const Input = ({ type, id, name, onChange, ...rest }) => {
+    return <input type={type} id={id} name={name} onChange={onChange} {...rest} />;
 };
 
 export default Input;

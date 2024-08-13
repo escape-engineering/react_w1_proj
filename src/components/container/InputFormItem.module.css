@@ -1,0 +1,8 @@
+.inputTitleStyle {
+    text-align: center;
+}
+.inputBoxDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
