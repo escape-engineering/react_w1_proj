@@ -15,6 +15,7 @@ const InputForm = ({ onChange, addHandler, updateHandler, value }) => {
                         type={item.type}
                         key={item.name}
                         value={value}
+                        placeholder={item.placeholder}
                     />
                 );
             })}

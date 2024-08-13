@@ -10,6 +10,7 @@ export const FORM_LIST_INPUT = [
         type: "text",
         name: "country",
         label: "국가",
+        placeholder: "국가명을 입력하세요",
     },
     {
         type: "number",
