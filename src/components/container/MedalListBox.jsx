@@ -1,8 +1,7 @@
 import React from "react";
 import MedalList from "./MedalList.jsx";
 import "./MedalListBox.css";
-
-const MEDALLISTBOX_TH_LIST = ["국가명", "금메달", "은메달", "동메달", "액션"];
+import { MEDALLISTBOX_TH_LIST } from "../../constant.jsx";
 
 const MedalListBox = ({ onClick, countries }) => {
     return (

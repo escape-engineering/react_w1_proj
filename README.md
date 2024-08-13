@@ -11,21 +11,22 @@
 
 ## 프로젝트 구조
 
-![image](https://github.com/user-attachments/assets/ecf6b222-e3ec-46b1-bc7d-7ac1a99d3e91)<br/>
-- 먼저 App에는 화면에 현재 보여지는 container 컴포넌트만 들어있다. 기능 확장을 고려하여 App.js에 컴포넌트들을 불러오지 않고 Container에서 정리해서 가져오는 방식으로 진행하였다.
+![image](https://github.com/user-attachments/assets/8eaaba48-e3e3-427e-969f-559835f7df64)<br/>
+- 먼저 App에는 화면에 현재 보여지는 CountryContainer 컴포넌트만 들어있다. 기능 확장을 고려하여 App.js에 컴포넌트들을 불러오지 않고 CountryContainer에서 정리해서 가져오는 방식으로 진행하였다.
 
 
-![Group 57](https://github.com/user-attachments/assets/ed4607af-bfeb-4092-91e6-7f0e80d3be7d)<br/>
-- Container 컴포넌트는 크게 3가지 구조로 나뉜다.
-- 박스의 제목을 보여주는 Title컴포넌트, 입력칸과 버튼을 가진 MedalInputForm컴포넌트, 데이터를 표 형식으로 보여주는 MedalListBox 컴포넌트 이 세가지이다.
+![image](https://github.com/user-attachments/assets/4571aac3-18a1-4e48-b9a6-530546e4b939)<br/>
+- CountryContainer 컴포넌트는 크게 3가지 구조로 나뉜다.
+- 박스의 제목을 보여주는 Title컴포넌트, 입력칸과 버튼을 가진 InputForm컴포넌트, 데이터를 표 형식으로 보여주는 MedalListBox 컴포넌트 이 세가지이다.
 - Title컴포넌트는 코드를 깔끔하게 만들기위해 분리하였고, 따로 재사용성이나 기능은 없다.
 
-![Group 56](https://github.com/user-attachments/assets/4a8282f8-810d-40ad-9b2b-0b8f8a8f7ee7)<br/>
-- MedalInputForm컴포넌트는 4가지 input요소와 두개의 버튼을 보유하고 있다.
-- 그 중 국가명 입력은 CountryInput컴포넌트로 따로 관리되며, 메달 입력은 MedalInput컴포넌트를 재사용하여 만들었다.
-- 같은 형태에 메달이름만 달라 컴포넌트 재사용이 가능하다 생각하여 컴포넌트를 분리하기로 결정하였다.
-- CountryInput과 MedalInput컴포넌트는 같은 Input컴포넌트를 사용한다. 이때 type에 따라 setValue를 달리하도록 설정하였다.
+![image](https://github.com/user-attachments/assets/d970fea1-19a9-4bd3-8be3-b3223a8c7f48)<br/>
+- InputForm컴포넌트는 4가지 input/label과 두개의 버튼을 보유하고 있다.
+- 네가지 모두 기존에 만들어 둔 FORM_LIST_INPUT상수의 값에따라 InputFormItem컴포넌트로 만들어진다.
+- CountryInput과 MedalInput컴포넌트는 같은 Input컴포넌트를 사용한다. 
+![image](https://github.com/user-attachments/assets/e36997ea-2047-45b7-b6c3-4ebcb07593a9)<br/>
 - 두가지 버튼도 같은 Button컴포넌트를 재사용하여 만들었다.
+![image](https://github.com/user-attachments/assets/92239c51-f359-421a-90c8-4c4fdeea1268)<br/>
 
 ![Group 58](https://github.com/user-attachments/assets/68567431-486b-44ae-a7aa-be4404adaa92)<br/>
 - 마지막으로 MedalListBox컴포넌트는 테이블헤더와 테이블바디부분으로 구분된다.
