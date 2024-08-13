@@ -42,7 +42,7 @@ const useCountry = () => {
         e.preventDefault();
         if (formCheck()) return null;
         setCountries([...countries, { ...form }]);
-        console.log("countries Add ", countries);
+        setForm(INITIAL_STATE);
     };
     const formUpdateHandler = (e) => {
         e.preventDefault();
@@ -51,6 +51,7 @@ const useCountry = () => {
             return item.country === form.country ? form : item;
         });
         setCountries(newArray);
+        setForm(INITIAL_STATE);
     };
     const formDeleteHandler = (e) => {
         const { id } = e.target;

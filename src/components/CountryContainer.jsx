@@ -1,4 +1,3 @@
-import React, { useEffect, useRef, useState } from "react";
 import Title from "./container/Title.jsx";
 import MedalListBox from "./container/MedalListBox.jsx";
 import "./CountryContainer.css";
